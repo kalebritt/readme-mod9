@@ -43,7 +43,7 @@ inquirer
   });
 
 // TODO: Create a function to write README file
-function writeToFile(README.md, data) {}
+function writeToFile(READMEmd, data) {}
 
 // TODO: Create a function to initialize app
 async function init() {
@@ -53,7 +53,7 @@ async function init() {
         const generateContent = generateMarkdown(answers);
         // Write new README.md to dist directory
         await writeFileAsync('./dist/README.md', generateContent);
-        console.log('✔️  Successfully wrote to README.md');
+        console.log('You did it!');
     }   catch(err) {
         console.log(err);
     }
