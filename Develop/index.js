@@ -1,72 +1,88 @@
-// TODO: Include packages needed for this application
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generateMarkdown = require("./utils/generateMarkdown.js")
+// Variables and dependancies
+const fs = require("fs");
+const util = require("util");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown")
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
-const questions = [];
+//User questions
+function promptUser(){
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "What did you name your project?",
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Provide a description of the project: "
+        },
+        {
+            type: "input",
+            name: "installation",
+            message: "Describe the installation process if any: ",
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "What is the intention of the project?"
+        },
+        {
+            type: "list",
+            name: "license",
+            message: "Chose the appropriate license for this project: ",
+            choices: [
+                "Apache",
+                "Academic",
+                "GNU",
+                "ISC",
+                "MIT",
+                "Mozilla",
+                "Open"
+            ]
+        },
+        {
+            type: "input",
+            name: "contributing",
+            message: "Who else contibuted to the project?"
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Is it possible to test the project?"
+        },
+        {
+            type: "input",
+            name: "questions",
+            message: "How can I fix any issues with the project? "
+        },
+        {
+            type: "input",
+            name: "username",
+            message: "Please enter your GitHub username: "
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Please enter your email: "
+        }
+    ]);
+} 
 
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'project title',
-      message: 'What is the title of your project?',
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: 'Provide a brief description of your project.',
-    },
-    {
-      type: 'input',
-      name: 'usage',
-      message: 'How will this project be utilized?',
-    },
-    {
-      type: 'input',
-      name: 'credits',
-      message: 'Did anyone else assist with your project?',
-    },
-    {
-      type: 'input',
-      name: 'license',
-      message: 'What is your licensing choice?.',
-    },
-    {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
-    },
-  ])
-  .then((answers) => {
-  });
-
-// TODO: Create a function to write README file
-function writeToFile(READMEmd, data) {}
-
-// TODO: Create a function to initialize app
-async function init() {
+// pomisify 
+  async function init() {
     try {
-        // Ask user questions and generate responses
+        // questions and responses
         const answers = await promptUser();
         const generateContent = generateMarkdown(answers);
-        // Write new README.md to dist directory
+        // New readme
         await writeFileAsync('./dist/README.md', generateContent);
-        console.log('You did it!');
+        console.log('Success');
     }   catch(err) {
         console.log(err);
     }
   }
   
   init();  
-        // Ask user questions and generate responses
-    
-        // Write new README.md to dist directory
- 
-
-// Function call to initialize app
-init();
-
-  
  
