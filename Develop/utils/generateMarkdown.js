@@ -17,7 +17,7 @@
 // `;
 // }
 
-function generateReadme(answers) {
+function generateMarkdown(answers) {
   return `
 <h1 align="center">${answers.projectTitle} 👋</h1>
 
