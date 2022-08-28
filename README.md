@@ -1,6 +1,6 @@
 # readme-mod9
 
-[Markdown Generator](https://kalebritt.github.io/)readme-mod9/
+[Markdown Generator] (https://kalebritt.github.io/)readme-mod9/
 
 Description
 With the wonderful assistance of node.js, javascript, and google, this app will generate a readme.md for your created app. To view the code in action, please navigate to the assets folder.  Thanks!
