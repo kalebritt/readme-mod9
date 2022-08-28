@@ -1,8 +1,8 @@
 
 
-![badge](https://img.shields.io/badge/license-Apache-brightgreen)<br />
+![badge](https://img.shields.io/badge/license-Academic-brightgreen)<br />
 ## Description
-🔍 d
+🔍 desciption
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,21 +12,21 @@
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-💾 d
+💾 installation
 ## Usage
-💻 d
+💻 intention
 ## License
-![badge](https://img.shields.io/badge/license-Apache-brightgreen)
+![badge](https://img.shields.io/badge/license-Academic-brightgreen)
 <br />
-This application is covered by the Apache license. 
+This application is covered by the Academic license. 
 ## Contributing
-👪 d
+👪 google
 ## Tests
-✏️ d
+✏️ now
 ## Questions
-✋ d<br />
+✋ magic<br />
 <br />
-:octocat: Find me on GitHub: [d](https://github.com/d)<br />
+:octocat: Find me on GitHub: [username](https://github.com/username)<br />
 <br />
-✉️ Email me with any questions: d<br /><br />
+✉️ Email me with any questions: email<br /><br />
   
