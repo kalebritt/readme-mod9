@@ -12,7 +12,7 @@ Credits
 License
 Installation
 Usage
-Below is a screenshot of the app locating the weather of Denver, CO>
+Below is a screenshot of the generator in VS Code.>
 
 ![alt text](./assets/images/weatherapi.png)
 
