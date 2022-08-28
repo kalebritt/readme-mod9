@@ -14,6 +14,6 @@ Installation
 Usage
 Below is a screenshot of the generator in VS Code.>
 
-![alt text](./assets/images/weatherapi.png)
+![alt text](/assets/readme-mod9.png)
 
 Credits
