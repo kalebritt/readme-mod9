@@ -77,7 +77,7 @@ function promptUser(){
         const answers = await promptUser();
         const generateContent = generateMarkdown(answers);
         // New readme
-        await writeFileAsync('./rm/README.md', generateContent);
+        await writeFileAsync('README.md', generateContent);
         console.log('Success');
     }   catch(err) {
         console.log(err);
